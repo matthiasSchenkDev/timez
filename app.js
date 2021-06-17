@@ -10,3 +10,8 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
 	res.send("Welcome to the Homepage")
 });
+
+app.get('/call', (req, res) => {
+	res.sendFile(path.join(__dirname, '/VideoCallPage/call.html'));
+});
+
