@@ -34,7 +34,7 @@ let localStream
 function listen() {
     peer.on('call', (call) => {
 
-        navigator.getUserMedia({
+        navigator.mediaDevices.getUserMedia({
             audio: true, 
             video: true
         }, (stream) => {
@@ -56,7 +56,7 @@ function listen() {
 }
 
 function startCall(otherUserId) {
-    navigator.getUserMedia({
+    navigator.mediaDevices.getUserMedia({
         audio: true,
         video: true
     }, (stream) => {
