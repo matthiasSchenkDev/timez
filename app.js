@@ -2,7 +2,7 @@ const express = require('express');
 const { ExpressPeerServer } = require('peer');
 const app = express();
 
-const port = process.env.port || 3000;
+const port = process.env.port || 8080;
 app.use(express.static('public'));
 
 const server = app.listen(port, () => {
