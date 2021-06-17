@@ -1,4 +1,4 @@
-import Peer from 'peerjs';
+import Peer from './peerjs';
 
 let localVideo = document.getElementById("local-video")
 let remoteVideo = document.getElementById("remote-video")
