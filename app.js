@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/call', (req, res) => {
-	res.sendFile(path.join(__dirname, '/VideoCallPage/call.html'));
+	res.sendFile('./VideoCallPage/call.html');
 });
 
