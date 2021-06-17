@@ -13,6 +13,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/call', (req, res) => {
-	res.sendFile('./VideoCallPage/call.html', { root: __dirname });
+	res.sendFile('./call.html', { root: __dirname });
 });
 
