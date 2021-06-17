@@ -11,8 +11,8 @@ let peer
 function init (userId) {
     console.log("Initialising with userId:" + userId);
 	peer = new Peer(userId, {
-        'localhost', // TODO
-        8080,
+        host:  'localhost', // TODO
+        port: 8080,
         path: '/peerjs/timez' // TODO
     })
 
