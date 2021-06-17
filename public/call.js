@@ -11,8 +11,7 @@ let peer
 function init (userId) {
     console.log("Initialising with userId:" + userId);
 	peer = new Peer(userId, {
-        host:  'http://timez-env.eba-e46rgjvy.us-east-2.elasticbeanstalk.com', // TODO
-        port: 8080,
+        host:  'timez-env.eba-e46rgjvy.us-east-2.elasticbeanstalk.com', // TODO
         path: '/peerjs',
         key: 'peerjs',
         secure: true // TODO
