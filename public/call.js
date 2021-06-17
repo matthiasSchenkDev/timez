@@ -1,3 +1,5 @@
+import Peer from 'peerjs';
+
 let localVideo = document.getElementById("local-video")
 let remoteVideo = document.getElementById("remote-video")
 
@@ -9,11 +11,15 @@ remoteVideo.onplaying = () => { remoteVideo.style.opacity = 1 }
 
 let peer
 function init (userId) {
-	peer = new Peer(userId, {
+/*	peer = new Peer(userId, {
         host: '192.168.1.239', // TODO
         port: 9000,
         path: '/videocall' // TODO
-    })
+    })*/
+
+    peer = new Peer(userId);
+
+
 
     // peerjs --port 9000 --key peerjs --path /videocall
 
