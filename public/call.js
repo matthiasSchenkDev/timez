@@ -9,6 +9,7 @@ remoteVideo.onplaying = () => { remoteVideo.style.opacity = 1 }
 
 let peer
 function init (userId) {
+    console.log("Initialising with userId:" + userId);
 	peer = new Peer(userId, {
         //host: '192.168.1.239', // TODO
         port: process.env.port || 3000,
@@ -17,7 +18,7 @@ function init (userId) {
 
     //peer = new Peer(userId);
 
-
+    console.log(peer);
 
     // peerjs --port 9000 --key peerjs --path /videocall
 
