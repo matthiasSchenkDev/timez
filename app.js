@@ -10,7 +10,7 @@ const server = app.listen(port, () => {
 });
 
 const peerServer = ExpressPeerServer(server, {
-  path: '/timez'
+  debbug: true
 });
 app.use('/peerjs', peerServer);
 
