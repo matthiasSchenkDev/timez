@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.port || 3000;
 
 app.listen(port, () => {
-	console.log("Server running");
+	console.log("Server running at port: " + port);
 });
 
 app.get('/', (req, res) => {
