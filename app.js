@@ -1,12 +1,18 @@
 const express = require('express');
+const { ExpressPeerServer } = require('peer');
 const app = express();
 
 const port = process.env.port || 3000;
 app.use(express.static('public'));
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
 	console.log("Server running at port: " + port);
 });
+
+const peerServer = ExpressPeerServer(server, {
+  path: '/timez'
+});
+app.use('/peerjs', peerServer);
 
 app.get('/', (req, res) => {
 	res.send("Welcome to the Homepage")
