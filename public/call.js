@@ -12,7 +12,7 @@ function init (userId) {
     console.log("Initialising with userId:" + userId);
 	peer = new Peer(userId, {
         host:  'http://timez-env.eba-e46rgjvy.us-east-2.elasticbeanstalk.com', // TODO
-        port: 8080,
+        //port: 8080,
         path: '/peerjs/timez' // TODO
     })
 
